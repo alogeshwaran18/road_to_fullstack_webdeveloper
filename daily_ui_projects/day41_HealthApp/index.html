@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health & Fitness Tracker</title>
+    <link href="./style.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <h1>My Fitness Dashboard</h1>
+    </header>
+    <main>
+        <section class="activity-tracker">
+            <h2>Today's Activity</h2>
+            <div class="activity-summary">
+                <div class="metric">
+                    <img src="icons/steps.png" alt="Steps Icon">
+                    <p>Steps</p>
+                    <span id="steps">0</span>
+                </div>
+                <div class="metric">
+                    <img src="icons/calories.png" alt="Calories Icon">
+                    <p>Calories Burned</p>
+                    <span id="calories">0</span>
+                </div>
+                <div class="metric">
+                    <img src="icons/active-minutes.png" alt="Active Minutes Icon">
+                    <p>Active Minutes</p>
+                    <span id="activeMinutes">0</span>
+                </div>
+            </div>
+            <button onclick="stratWorkOut()">Start Workout</button>
+        </section>
+        <section class="workout-history">
+            <h2>Workout History</h2>
+            <ul id="workoutList">
+                <li>Squats</li>
+                <li>Push-ups</li>
+                <li>Pull-ups</li>
+            </ul>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
